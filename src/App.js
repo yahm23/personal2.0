@@ -6,7 +6,7 @@ function App() {
   const[loadingSwitch,setLoader]=useState(true)
   
   useEffect(() => {
-    let myVar = setTimeout(function(){ setLoader(false) }, 5000);
+    let myVar = setTimeout(function(){ setLoader(false) }, 4000);
     // setTimeout(setLoader(false), 7000);
     
   },[] )
@@ -17,7 +17,7 @@ function App() {
       {loadingSwitch? 
         <Loader></Loader>:
         <div>
-          <h1 className="test">Application shit.</h1>
+          <h1 className="test fade-in">Application shit.</h1>
         </div>
         }
     </div>
