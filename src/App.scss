@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.loaderContainer svg{
+    width:80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top:30%;
+    stroke:white;
+    bottom: 50%;
+}
+#lowercaseY2 {
+    stroke-dasharray: 1000;
+    stroke-width: 2.5px;
+    animation: animateMe 10s;
+    stroke-dashoffset: 1000;
+}
+#lowercaseY {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    stroke-width: 2.5px;
+    animation: animateMe 10s;
+    animation-delay: 2s;
+}
+
+
+  
+@keyframes animateMe {
+    0% { stroke-dashoffset: 1000;}
+    100% { stroke-dashoffset: 0;}
+}
+
+.test{
+    color: white;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top:30%;
+}
