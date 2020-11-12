@@ -14,19 +14,11 @@ body {
   bottom: 50%;
 }
 
-#lowercaseY2 {
-  stroke-dasharray: 1000;
-  stroke-width: 2.5px;
-  animation: animateMe 10s;
-  stroke-dashoffset: 1000;
-}
-
 #lowercaseY {
-  stroke-dashoffset: 1000;
   stroke-dasharray: 1000;
   stroke-width: 2.5px;
   animation: animateMe 10s;
-  animation-delay: 2s;
+  stroke-dashoffset: 1000;
 }
 
 @keyframes animateMe {
