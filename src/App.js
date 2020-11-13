@@ -7,7 +7,7 @@ function App() {
   const[loadingSwitch,setLoader]=useState(true)
   
   useEffect(() => {
-    let myVar = setTimeout(function(){ setLoader(false) }, 3000);
+    let myVar = setTimeout(function(){ setLoader(false) }, 2000);
   },[] )
 
 

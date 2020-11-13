@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    max-width: 1620px;
     background-color: black;
 }
 
@@ -72,11 +73,13 @@ body {
 
 .topBar{
     // width: 100%;
+    height: 100px;
     display: flex;
     justify-content: space-between;
 }
 .animLogo{
     // width: 100%;
+    position: relative;
     margin-left: 30px;
     align-items: center;
     display: flex;
@@ -84,17 +87,47 @@ body {
 }
 
 .logoText{
-    color: white;
-    text-align: left;
+    
     // font-family: 'Nexa',sans-serif;
-    font-family: 'Monda',sans-serif;
 
-    border-left: 4px solid white;
 }
-.logoText h2{
-    padding-left:10px;
-}
+// .logoText h2{
+//     padding-left:10px;
+// }
 
 .logo{
+    border-right: 4px solid white;
     padding-right: 10px;
+    background-color: black;
+    z-index: 2;
+}
+
+.name{
+    // display:none;
+    margin-right:20px;
+}
+@mixin logoText{
+    font-size: 15px;
+    z-index: 0;
+    color: white;
+    text-align: left;
+    font-family: 'Monda',sans-serif;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.logoText{
+    @include logoText();
+    animation: slideIn 2s ;
+}
+.logoText2{
+    @include logoText();
+    animation-delay: 2s;
+    animation: slideIn 3s ;
+}
+
+@keyframes slideIn{
+    0% { opacity: 0; -webkit-transform: translateX(-70%); }   
+    // 50% { opacity: 0; }   
+  100% { opacity: 1; -webkit-transform: translateX(0); }
 }

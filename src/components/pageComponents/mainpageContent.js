@@ -6,7 +6,9 @@ export default function MainPageContent() {
     return (
         <div className="mainContentBody">
             <Navbar/>
-          <h1  className="test" >MAIN PAGE SHI</h1>
+            <div>
+                <h1  className="" >MAIN PAGE SHI</h1>
+            </div>
         </div>
     )
 }
