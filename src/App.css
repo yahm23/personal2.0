@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Nexa";
+  src: url("./assets/NexaBold.otf");
+}
 body {
   margin: 0;
   background-color: black;
@@ -37,7 +41,8 @@ body {
   top: 30%;
 }
 
-.fade-in {
+.mainContentBody {
+  padding: 30px;
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
   -moz-animation: fadeIn ease 2s;
@@ -58,12 +63,40 @@ body {
   display: flex;
   justify-content: flex-end;
   color: white;
-  font-size: 13px;
+  align-items: center;
+  font-size: 10px;
   margin-right: 25px;
 }
 
 .navTitles {
-  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animLogo {
+  margin-left: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logoText {
+  color: white;
+  text-align: left;
+  font-family: "Monda", sans-serif;
+  border-left: 4px solid white;
+}
+
+.logoText h2 {
+  padding-left: 10px;
+}
+
+.logo {
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=App.css.map */
