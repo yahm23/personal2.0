@@ -1,7 +1,7 @@
 import { useState,useEffect } from 'react';
 import './App.css';
-import Loader from './components/loader';
-import MainPageContent from './components/mainpageContent';
+import Loader from './components/functionalComponents/loader';
+import MainPageContent from './components/pageComponents/mainpageContent';
 
 function App() {
   const[loadingSwitch,setLoader]=useState(true)

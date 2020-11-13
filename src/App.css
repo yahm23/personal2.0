@@ -53,5 +53,17 @@ body {
     opacity: 1;
   }
 }
+.navbar {
+  font-family: "Monda", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 13px;
+  margin-right: 25px;
+}
+
+.navTitles {
+  padding-right: 40px;
+}
 
 /*# sourceMappingURL=App.css.map */
