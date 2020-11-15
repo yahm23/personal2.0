@@ -4,7 +4,9 @@ export default function AnimatedLogo() {
     const[hover,setHover]=useState(false)
 
     return (
-        <div className="animLogo">
+        <a className="animLogo" href="#top">
+
+        
             <div 
                 className="logo" 
                 onMouseEnter={()=>setHover(true)} 
@@ -20,6 +22,6 @@ export default function AnimatedLogo() {
                 :
                 <></>
             }
-        </div>
+        </a>
     )
 }

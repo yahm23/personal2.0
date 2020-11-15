@@ -43,7 +43,6 @@ body {
 }
 
 .mainContentBody {
-  padding-top: 50px;
   animation: fadeIn ease 4s;
 }
 
@@ -67,10 +66,24 @@ body {
 
 .navTitles {
   padding-left: 40px;
+  color: #feffea;
+  text-decoration: none;
+}
+
+.topBar a {
+  color: #feffea;
+  text-decoration: none;
 }
 
 .topBar {
-  padding: 0 50px;
+  top: 0;
+  width: -webkit-fill-available;
+  opacity: 80%;
+  position: fixed;
+  max-width: 1620px;
+  background-color: #02111b;
+  padding: 40px;
+  padding-bottom: 0;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -78,7 +91,6 @@ body {
 
 .animLogo {
   position: relative;
-  margin-left: 50px;
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -139,8 +151,8 @@ body {
 }
 
 .headerTitle {
-  margin-top: 15%;
-  margin-left: 50px;
+  margin-top: 200px;
+  margin-left: 40px;
 }
 
 .wave {
@@ -153,17 +165,32 @@ body {
   text-align: center;
 }
 
-.aboutSection {
-  background-color: #feffea;
-  color: #02111b;
-  padding: 0 50px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+@media screen and (max-width: 1000px) {
+  .aboutSection {
+    background-color: #feffea;
+    color: #02111b;
+    padding: 0 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
 }
-
+@media screen and (min-width: 1000px) {
+  .aboutSection {
+    background-color: #feffea;
+    color: #02111b;
+    padding: 0 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
 .aboutHeading {
   text-decoration: underline;
   margin-top: 0;
