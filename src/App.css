@@ -3,9 +3,9 @@
   src: url("./assets/NexaBold.otf");
 }
 body {
-  margin: 0;
+  margin: 0 auto;
   max-width: 1620px;
-  background-color: black;
+  background-color: #02111b;
 }
 
 .loaderContainer svg {
@@ -43,12 +43,8 @@ body {
 }
 
 .mainContentBody {
-  padding: 50px;
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
+  padding-top: 50px;
+  animation: fadeIn ease 4s;
 }
 
 @keyframes fadeIn {
@@ -63,7 +59,7 @@ body {
   font-family: "Monda", sans-serif;
   display: flex;
   justify-content: flex-end;
-  color: white;
+  color: #feffea;
   align-items: center;
   font-size: 10px;
   margin-right: 25px;
@@ -74,6 +70,7 @@ body {
 }
 
 .topBar {
+  padding: 0 30px;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -90,7 +87,7 @@ body {
 .logo {
   border-right: 4px solid white;
   padding-right: 10px;
-  background-color: black;
+  background-color: #02111b;
   z-index: 2;
 }
 
@@ -101,7 +98,7 @@ body {
 .logoText {
   font-size: 15px;
   z-index: 0;
-  color: white;
+  color: #feffea;
   text-align: left;
   font-family: "Monda", sans-serif;
   padding-left: 10px;
@@ -112,7 +109,7 @@ body {
 .logoText2 {
   font-size: 15px;
   z-index: 0;
-  color: white;
+  color: #feffea;
   text-align: left;
   font-family: "Monda", sans-serif;
   padding-left: 10px;
@@ -130,6 +127,29 @@ body {
     opacity: 1;
     -webkit-transform: translateX(0);
   }
+}
+.developer {
+  color: #feffea;
+  font-size: 80px;
+  font-family: Nexa, sans-serif;
+}
+
+.commentedOut {
+  color: grey !important;
+}
+
+.headerTitle {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.wave {
+  max-width: 1620px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=App.css.map */
