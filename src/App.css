@@ -70,7 +70,7 @@ body {
 }
 
 .topBar {
-  padding: 0 30px;
+  padding: 0 50px;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -78,7 +78,7 @@ body {
 
 .animLogo {
   position: relative;
-  margin-left: 30px;
+  margin-left: 50px;
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -140,16 +140,46 @@ body {
 
 .headerTitle {
   margin-top: 15%;
-  margin-left: 5%;
+  margin-left: 50px;
 }
 
 .wave {
   max-width: 1620px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
+}
+
+.aboutSection {
+  background-color: #feffea;
+  color: #02111b;
+  padding: 0 50px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.aboutHeading {
+  text-decoration: underline;
+  margin-top: 0;
+  grid-area: 1/1/2/2;
+  color: #02111b;
+  font-size: 50px;
+  font-family: "Monda", sans-serif;
+}
+
+.yoursTruly {
+  max-width: 350px;
+  border-radius: 80%;
+  grid-area: 1/2/2/3;
+  padding: 15px;
+  background-color: #02111b;
 }
 
 /*# sourceMappingURL=App.css.map */

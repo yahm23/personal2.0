@@ -4,14 +4,15 @@
     src: url('./assets/NexaBold.otf');
 }
 
-$mainBackground:#02111b;
+$mainDark:#02111b;
 $mainLight:#feffea;
+$horizontalPadding:50px;
 
 body {
     margin: 0 auto;
     max-width: 1620px;
     // background-color: #191919;
-    background-color: $mainBackground;
+    background-color: $mainDark;
 }
 
 .loaderContainer svg{
@@ -72,7 +73,7 @@ body {
 
 .topBar{
     // width: 100%;
-    padding: 0 30px;
+    padding: 0 $horizontalPadding;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -80,7 +81,7 @@ body {
 .animLogo{
     // width: 100%;
     position: relative;
-    margin-left: 30px;
+    margin-left: $horizontalPadding;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -90,7 +91,7 @@ body {
 .logo{
     border-right: 4px solid white;
     padding-right: 10px;
-    background-color: $mainBackground;
+    background-color: $mainDark;
     z-index: 2;
 }
 
@@ -134,18 +135,57 @@ body {
 }
 .headerTitle{
     margin-top: 15%;
-    margin-left: 5%;
+    margin-left: $horizontalPadding;
 }
 
 .wave{
     max-width: 1620px;
-    // position: absolute;
-    // width: 100vw;
-    // left: 0;
-    // right: 0;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     text-align: center;
 }
+.aboutSection{
+    background-color: $mainLight;
+    color: $mainDark;
+    padding: 0 $horizontalPadding;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.aboutHeading{
+    text-decoration: underline;
+    margin-top: 0;
+    grid-area: 1 / 1 / 2 / 2;
+    color: $mainDark;
+    font-size: 50px;
+    font-family: 'Monda',sans-serif;
+}
+
+.yoursTruly{
+    max-width: 350px;
+    border-radius: 80%;
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 15px;
+    background-color: $mainDark;
+
+    // background-position: top;
+    // background-size: 10px 1px;
+    // background-repeat: repeat-x ;
+
+}
+// .selfDiv{
+//     border-radius: 80%;
+//     width: 100%;
+//     width: initial;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
