@@ -61,7 +61,7 @@ body {
   color: #feffea;
   align-items: center;
   font-size: 10px;
-  margin-right: 25px;
+  margin-right: 40px;
 }
 
 .navTitles {
@@ -77,13 +77,12 @@ body {
 
 .topBar {
   top: 0;
-  width: -webkit-fill-available;
+  width: 95%;
   opacity: 80%;
   position: fixed;
   max-width: 1620px;
   background-color: #02111b;
-  padding: 40px;
-  padding-bottom: 0;
+  padding-top: 40px;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -91,6 +90,7 @@ body {
 
 .animLogo {
   position: relative;
+  margin-left: 40px;
   align-items: center;
   display: flex;
   justify-content: space-around;

@@ -7,10 +7,11 @@
 $mainDark:#02111b;
 $mainLight:#feffea;
 $horizontalPadding:40px;
+$maxWidth:1620px;
 
 body {
     margin: 0 auto;
-    max-width: 1620px;
+    max-width: $maxWidth;
     // background-color: #191919;
     background-color: $mainDark;
 }
@@ -62,7 +63,7 @@ body {
     color: $mainLight;
     align-items: center;
     font-size: 10px;
-    margin-right: 25px;
+    margin-right: $horizontalPadding;
 }
 
 .navTitles{
@@ -78,13 +79,13 @@ body {
 
 .topBar{
     top:0;
-    width: -webkit-fill-available;
+    width: 95%;
     opacity: 80%;
     position: fixed;
-    max-width: 1620px;;
+    max-width: $maxWidth;
     background-color: $mainDark;
-    padding:$horizontalPadding;
-    padding-bottom: 0;
+    padding-top: $horizontalPadding;
+
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -92,7 +93,7 @@ body {
 .animLogo{
     // width: 100%;
     position: relative;
-    // margin-left: $horizontalPadding;
+    margin-left:$horizontalPadding;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -150,7 +151,7 @@ body {
 }
 
 .wave{
-    max-width: 1620px;
+    max-width: $maxWidth;
     display: block;
     margin-left: auto;
     margin-right: auto;

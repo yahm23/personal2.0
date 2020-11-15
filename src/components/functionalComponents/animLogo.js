@@ -5,8 +5,7 @@ export default function AnimatedLogo() {
 
     return (
         <a className="animLogo" href="#top">
-
-        
+    
             <div 
                 className="logo" 
                 onMouseEnter={()=>setHover(true)} 
