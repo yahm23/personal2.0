@@ -154,7 +154,7 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    // grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -162,30 +162,30 @@ body {
 .aboutHeading{
     text-decoration: underline;
     margin-top: 0;
+    margin-bottom: 0px;
     grid-area: 1 / 1 / 2 / 2;
     color: $mainDark;
+    
     font-size: 50px;
     font-family: 'Monda',sans-serif;
 }
 
+.selfDiv{
+    margin: auto;
+}
 .yoursTruly{
-    max-width: 350px;
-    border-radius: 80%;
+    max-width: 300px;
+    border-radius: 50%;
     grid-area: 1 / 2 / 2 / 3;
     padding: 15px;
     background-color: $mainDark;
-
-    // background-position: top;
-    // background-size: 10px 1px;
-    // background-repeat: repeat-x ;
-
 }
-// .selfDiv{
-//     border-radius: 80%;
-//     width: 100%;
-//     width: initial;
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     background-position: center;
-// }
+
+.aboutContent{
+    margin-top: 0;
+    color: $mainDark;
+    font-family: 'Monda',sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
 

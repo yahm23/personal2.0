@@ -160,7 +160,6 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -168,18 +167,31 @@ body {
 .aboutHeading {
   text-decoration: underline;
   margin-top: 0;
+  margin-bottom: 0px;
   grid-area: 1/1/2/2;
   color: #02111b;
   font-size: 50px;
   font-family: "Monda", sans-serif;
 }
 
+.selfDiv {
+  margin: auto;
+}
+
 .yoursTruly {
-  max-width: 350px;
-  border-radius: 80%;
+  max-width: 300px;
+  border-radius: 50%;
   grid-area: 1/2/2/3;
   padding: 15px;
   background-color: #02111b;
+}
+
+.aboutContent {
+  margin-top: 0;
+  color: #02111b;
+  font-family: "Monda", sans-serif;
+  font-size: 20px;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=App.css.map */
