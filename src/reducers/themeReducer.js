@@ -7,7 +7,7 @@ const themeReducer = (state = initialState,action)=>{
       case "TOGGLE":
         return {
           ...state,
-          darkTheme: !state.darkTheme
+          darkTheme: !state.darkTheme,
         }
         default: return state
 
