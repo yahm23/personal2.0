@@ -5,7 +5,7 @@
 }
 
 $mainDark:#02111b;
-$mainLight:#feffea;
+$mainLight:#F2F2F2;
 $horizontalPadding:40px;
 $maxWidth:1620px;
 
@@ -15,6 +15,9 @@ body {
     // background-color: #191919;
     background-color: $mainDark;
 }
+
+.lightBackground{ background-color: $mainLight;}
+.darkBackground{ background-color: $mainDark;}
 
 .loaderContainer svg{
     width:80px;
@@ -47,8 +50,10 @@ body {
 }
 
 .mainContentBody {
+    animation: fadeIn cubic-bezier(0.24, -0.27, 0.6, 1.27) 4s;
     // padding-top: 50px;
-    animation: fadeIn ease 4s;
+    // animation: fadeIn ease 4s;
+    background-color: yellow;
 }
 
 @keyframes fadeIn {
@@ -101,7 +106,7 @@ body {
 
 
 .logo{
-    border-right: 4px solid white;
+    // border-right: 4px solid white;
     padding-right: 10px;
     background-color: $mainDark;
     z-index: 2;

@@ -1,10 +1,11 @@
-import React from 'react'
-import AnimatedLogo from '../functionalComponents/animLogo'
+import React, { useState } from 'react'
 import Navbar from '../functionalComponents/navbar'
 import Header from './header'
 import About from './about'
 
 export default function MainPageContent() {
+    const [lightMode,setLightMode] = useState(false);
+    
     return (
         <div className="mainContentBody">
             <Navbar/>

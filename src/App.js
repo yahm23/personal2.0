@@ -10,14 +10,13 @@ function App() {
     let myVar = setTimeout(function(){ setLoader(false) }, 2000);
   },[] )
 
-
   return (
-    <div className="App">
-      {loadingSwitch? 
-        <Loader/>:
-        <MainPageContent/>
-      }
-    </div>
+      <div className="App">
+        {loadingSwitch? 
+          <Loader/>:
+          <MainPageContent/>
+        }
+      </div>
   );
 }
 

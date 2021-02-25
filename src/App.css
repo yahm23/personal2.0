@@ -8,6 +8,14 @@ body {
   background-color: #02111b;
 }
 
+.lightBackground {
+  background-color: #F2F2F2;
+}
+
+.darkBackground {
+  background-color: #02111b;
+}
+
 .loaderContainer svg {
   width: 80px;
   height: 80px;
@@ -43,7 +51,8 @@ body {
 }
 
 .mainContentBody {
-  animation: fadeIn ease 4s;
+  animation: fadeIn cubic-bezier(0.24, -0.27, 0.6, 1.27) 4s;
+  background-color: yellow;
 }
 
 @keyframes fadeIn {
@@ -58,7 +67,7 @@ body {
   font-family: "Monda", sans-serif;
   display: flex;
   justify-content: flex-end;
-  color: #feffea;
+  color: #F2F2F2;
   align-items: center;
   font-size: 10px;
   margin-right: 40px;
@@ -66,12 +75,12 @@ body {
 
 .navTitles {
   padding-left: 40px;
-  color: #feffea;
+  color: #F2F2F2;
   text-decoration: none;
 }
 
 .topBar a {
-  color: #feffea;
+  color: #F2F2F2;
   text-decoration: none;
 }
 
@@ -97,7 +106,6 @@ body {
 }
 
 .logo {
-  border-right: 4px solid white;
   padding-right: 10px;
   background-color: #02111b;
   z-index: 2;
@@ -110,7 +118,7 @@ body {
 .logoText {
   font-size: 15px;
   z-index: 0;
-  color: #feffea;
+  color: #F2F2F2;
   text-align: left;
   font-family: "Monda", sans-serif;
   padding-left: 10px;
@@ -121,7 +129,7 @@ body {
 .logoText2 {
   font-size: 15px;
   z-index: 0;
-  color: #feffea;
+  color: #F2F2F2;
   text-align: left;
   font-family: "Monda", sans-serif;
   padding-left: 10px;
@@ -167,7 +175,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   .aboutSection {
-    background-color: #feffea;
+    background-color: #F2F2F2;
     color: #02111b;
     padding: 0 40px;
     text-align: center;
@@ -180,7 +188,7 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .aboutSection {
-    background-color: #feffea;
+    background-color: #F2F2F2;
     color: #02111b;
     padding: 0 40px;
     text-align: center;
