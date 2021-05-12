@@ -1,23 +1,36 @@
 import React from 'react'
 import AnimatedLogo from './animLogo'
+import {useSelector} from 'react-redux'
 
 export default function Navbar() {
+    const darkTheme = useSelector( state=>state.darkTheme)
+    const menuItems = [
+        {
+            name:"Main",
+            anchor:"#"
+        },
+        {
+            name:"About",
+            anchor:"#about"
+        },
+        {
+            name:"Skills",
+            anchor:"#skills"
+        },
+        {
+            name:"Portfolio",
+            anchor:"#portfolio"
+        }
+    ]
     return (
-        <div className="topBar">
+        <div className={`topBar ${darkTheme? "darkBackground": "lightBackground"}` }>
             <AnimatedLogo/>
             <div className="navbar">
-                <a href="#">
-                    <h1 className="navTitles">Main</h1>
-                </a>
-                <a href="#about">
-                    <h1 className="navTitles">About</h1>
-                </a>
-                <a href="#anchor">
-                    <h1 className="navTitles">Skills</h1>
-                </a>
-                <a href="#anchor">
-                    <h1 className="navTitles">Porfolio</h1>
-                </a>
+                {menuItems.map((item)=>{
+                    return <a href={item.anchor}>
+                        <h1 className={`navTitles ${darkTheme? "darkBackground": "lightBackground"}` }>{item.name}</h1>
+                    </a>
+                })}
             </div>
           </div>
     )

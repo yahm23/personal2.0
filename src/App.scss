@@ -12,12 +12,11 @@ $maxWidth:1620px;
 body {
     margin: 0 auto;
     max-width: $maxWidth;
-    // background-color: #191919;
     background-color: $mainDark;
 }
 
-.lightBackground{ background-color: $mainLight;}
-.darkBackground{ background-color: $mainDark;}
+.lightBackground{ background-color: $mainLight; color:$mainDark}
+.darkBackground{ background-color: $mainDark; color:$mainLight}
 
 .loaderContainer svg{
     width:80px;
@@ -29,6 +28,7 @@ body {
     stroke:white;
     bottom: 50%;
 }
+
 #lowercaseY {
     stroke-dasharray: 1000;
     stroke-width: 2.5px;
@@ -41,12 +41,19 @@ body {
     100% { stroke-dashoffset: 0;}
 }
 
-.test{
-    color: white;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    top:30%;
+.darkToggle{
+    background-color: white;
+    width: 50px;
+    height: min-content;
+    padding: 0px;
+}
+
+.darkIcons{
+    vertical-align: middle;
+}
+
+.iconsContainer{
+    background-color: $mainDark;
 }
 
 .mainContentBody {
@@ -65,7 +72,7 @@ body {
     font-family: 'Monda',sans-serif;
     display: flex;
     justify-content: flex-end;
-    color: $mainLight;
+    // color: $mainLight;
     align-items: center;
     font-size: 10px;
     margin-right: $horizontalPadding;
@@ -73,22 +80,22 @@ body {
 
 .navTitles{
     padding-left: 40px;
-    color: $mainLight;
+    // color: $mainLight;
     text-decoration: none;
 }
 .topBar a{
-    color: $mainLight;
+    // color: $mainLight;
     text-decoration: none;
 }
 
 
 .topBar{
     top:0;
-    width: 95%;
-    opacity: 80%;
+    width: 100%;
+    // opacity: 80%;
     position: fixed;
     max-width: $maxWidth;
-    background-color: $mainDark;
+    // background-color: $mainDark;
     padding-top: $horizontalPadding;
 
     height: 100px;
@@ -108,7 +115,7 @@ body {
 .logo{
     // border-right: 4px solid white;
     padding-right: 10px;
-    background-color: $mainDark;
+    // background-color: $mainDark;
     z-index: 2;
 }
 

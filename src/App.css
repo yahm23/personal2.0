@@ -10,10 +10,12 @@ body {
 
 .lightBackground {
   background-color: #F2F2F2;
+  color: #02111b;
 }
 
 .darkBackground {
   background-color: #02111b;
+  color: #F2F2F2;
 }
 
 .loaderContainer svg {
@@ -42,12 +44,19 @@ body {
     stroke-dashoffset: 0;
   }
 }
-.test {
-  color: white;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  top: 30%;
+.darkToggle {
+  background-color: white;
+  width: 50px;
+  height: min-content;
+  padding: 0px;
+}
+
+.darkIcons {
+  vertical-align: middle;
+}
+
+.iconsContainer {
+  background-color: #02111b;
 }
 
 .mainContentBody {
@@ -67,7 +76,6 @@ body {
   font-family: "Monda", sans-serif;
   display: flex;
   justify-content: flex-end;
-  color: #F2F2F2;
   align-items: center;
   font-size: 10px;
   margin-right: 40px;
@@ -75,22 +83,18 @@ body {
 
 .navTitles {
   padding-left: 40px;
-  color: #F2F2F2;
   text-decoration: none;
 }
 
 .topBar a {
-  color: #F2F2F2;
   text-decoration: none;
 }
 
 .topBar {
   top: 0;
-  width: 95%;
-  opacity: 80%;
+  width: 100%;
   position: fixed;
   max-width: 1620px;
-  background-color: #02111b;
   padding-top: 40px;
   height: 100px;
   display: flex;
@@ -107,7 +111,6 @@ body {
 
 .logo {
   padding-right: 10px;
-  background-color: #02111b;
   z-index: 2;
 }
 
